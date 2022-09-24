@@ -1,0 +1,671 @@
+
+/* Import Script font awesome, google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+/* CREATING THE NAVIGATION BAR DESKTOP */
+
+#intro{
+    width: 100%;
+    height: 750px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 5px 0;  
+    display: flex; 
+    flex-direction: row;
+    font-family: 'Open Sans',
+    sans-serif;
+    
+   
+
+}
+/* website Logo */
+.navitem{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster',
+    cursive;
+    color: aliceblue;
+}
+
+
+.navitem2{
+    display:flex;
+    font-family: 'Open Sans',
+    sans-serif;
+    flex: 2;
+    /* background-color: rgb(41, 146, 146); */
+    align-items:center;
+    justify-content: space-evenly;
+
+    
+
+}
+
+.navitem2>a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+.navitem2>a:hover{
+    color:gray;
+    transition: 0.2s;
+}
+
+.navitem2>button  {
+    width: 15%;
+    height: 30px;
+    border: 0;
+    border-radius: 25px;
+    font-size: small;
+    font-weight: bold;
+    
+
+}
+.navitem2>button:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.1s;
+
+}
+
+.whitespace{
+    width: 5%;
+}
+/* search css */
+.search{
+    width: 18%;
+    height: 30px;
+    border: 2px solid rgb(216, 10, 10);
+    border-radius: 25px;
+    
+  
+
+}
+
+.search::placeholder{
+    color: black;
+    font-family: 'Open Sans',
+    sans-serif;
+    text-align: center;
+}
+
+
+
+/* NAVIGATION BAR ENDS HERE */
+
+.navmobile{
+    display: none;
+    width: 100%;
+    height: 50px;
+    background: none;
+    box-shadow: 0 0 10px 0 ;
+    
+}
+
+.menubar{
+    justify-content: flex-end;
+    padding-right: 20px;
+     font-size: 20px;
+}
+
+.navmobile>.mobileHeader{
+    padding-right: 20%;
+}
+
+.openmenu{
+    display: none;
+}
+
+.openmenu>ul{
+    list-style-type: none;
+}
+
+.openmenu>ul>li{
+
+    margin-top: 15px;
+}
+
+.openmenu>ul>li>a{
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Open Sans',
+    sans-serif;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.openmenu>ul>li>a:hover{
+    color:rgb(48, 40, 40);
+    transition: 0.2s;
+}
+
+.openmenu>ul>li>button{
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 25px;
+    font-size: small;
+    font-weight: bold;
+    left: 15px ;
+    
+}
+
+.openmenu>ul>li>button:hover{
+    background-color: gray;
+    color: white;
+    transition: 0.1s;
+}
+
+
+
+
+#toggle{
+    display: none;
+}
+
+/* ALL DESKTOP STYLE ENDS HERE */
+
+
+/* INTRODUCTORY CONTAINER DESKTOP*/
+.landingintro{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.landingleft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingright{
+    flex: 1;
+    
+}
+
+
+.landingtextbox {
+    width: 450px;
+    height: 300px;
+ 
+   
+   
+}
+.landingtextbox>h1{
+    font-family: 'Josefin Sans',
+    sans-serif;
+    text-align: left;
+    color: azure;
+    line-height: 35px;
+
+
+}
+.landingtextbox>p{
+    font-family: 'Josefin Sans',
+    sans-serif;
+    color: azure;
+    text-align: left;
+    font-family: 'PT Sans',
+    sans-serif;
+    line-height: 1.6rem;
+}
+
+.emph-para{
+    font-weight: bold;
+    color: pink;
+    text-shadow: 10px;
+}
+
+.landingright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingimg{
+    width: 450px;
+   height: 450px;
+   border-radius: 40%;
+   background-image: url(../images/wedding.jpg);
+   background-position: center;
+   background-size: cover;
+
+}
+/* Intro Buttons */
+
+
+.introbtn{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Josefin Sans',
+    sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+
+.introbtn:hover{
+    background-color: #664c4c;
+    color: aliceblue;
+    transition: 0.2s;
+}
+
+.secondbtn{
+    margin-left: 15px;
+}
+
+
+/* ABOUT SECTION DESKTOP  */
+.aboutUs{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutbox{
+    width: 50%;
+    height: 300px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+    overflow: hidden;
+    box-shadow: 0 2px 2px  #000;
+    
+}
+
+.aboutbox>h1{
+    text-align: center;  
+    font-family: 'Josefin Sans',
+    sans-serif;
+    box-shadow: #664c4c 10px;
+    text-decoration: underline;
+
+}
+
+.aboutbox>ul>li{
+    text-align: center;
+    list-style-type: none;
+    margin-right: 5% ;
+    line-height: 2rem;
+    font-family: 'Josefin Sans',
+    sans-serif;
+    font-size: large;
+
+}
+
+/* PRODUCT SECTION DESKTOP */
+
+.producttext{
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.producttext>h1{
+    text-align: center;
+    font-family: 'Josefin Sans',
+    sans-serif;
+    padding: 15px;
+    color: aliceblue;
+    text-decoration: underline;
+
+}
+
+.productmain{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.productbody{
+    width: 80%;
+    height:500px ;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.product{
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+ 
+}
+
+.productbox{
+    width: 260px;
+    height: 350px;
+    /* background-color: #000000; */
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px whitesmoke;
+}
+
+.productbox{
+    font-size: large;
+    
+}
+
+.productbox>h3, .productbox>p{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Josefin Sans',
+    sans-serif;
+
+}
+
+.productimg{
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(../images/jewlerys.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+
+}
+.productimg1{
+    background-image: url(../images/Food\ \(1\).jpg);
+}
+
+.productimg2{
+    background-image: url(../images/MOMENT.jpg);
+}
+
+/* WEDDING VIDEO DESKTOP  */
+
+
+
+.videocontianer{
+   width: 100%;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.importvid>video{
+    border-radius: 10px;
+    box-shadow: 6px 9px 9px  rgb(75, 47, 51);
+
+
+}
+
+/* FOOTER CONTAINER DESKTOP*/
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+   
+    
+
+   
+    
+
+}
+
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+
+    padding-top: 6%;
+
+}
+
+.icon>i{
+    margin: 10px;
+    color: palevioletred;
+  
+}
+
+
+.footer>p{
+    color: aliceblue;
+    font-family: 'Josefin Sans',
+    sans-serif;
+    margin: auto;
+    padding-top: 5px;
+}
+
+#footertext {
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* ALL MOBILE SYSTEM BEGINS HERE */ 
+
+@media only screen and (max-width: 1000px) {
+    #intro{
+        height: 950px;
+
+    }
+    #nav {
+        display: none;
+    }
+    .navmobile {
+        display: flex;
+        
+    }
+
+    .openmenu{
+        
+        position: absolute; 
+        width: 150px;
+        height: 220px;
+        background-color: rgb(146, 150, 150);
+        float: right; 
+        right :1px ;
+        top:50px ;
+        border-radius: 0 0 0 10px ;
+      
+        
+     
+    }
+/* Used for toggle the dropdown bottons */
+    #toggle:checked+label>.openmenu{
+        display: flex;
+    }
+
+
+/* To Hide the checkboxs */
+    /* .precol{
+        visibility: hidden;
+        
+    } */
+
+
+
+    /* INTRODUCTORY MOBILE CONTAINER MOBILE */
+
+
+
+    .landingintro{
+       display: flex;
+        flex-direction: column;
+        height: 900px;
+     
+    }
+
+    .landingtextbox {
+        width: 400px;
+        height: 350px;
+    
+    
+    
+    }
+
+    .landingtextbox>h1 {
+        font-family: 'Josefin Sans',
+            sans-serif;
+        text-align: center;
+        color: azure;
+        line-height: 35px;
+        padding-top: 50px;
+    
+    
+    }
+    
+    .landingtextbox>p {
+        font-family: 'Josefin Sans',
+            sans-serif;
+        color: azure;
+        text-align: center;
+        font-family: 'PT Sans',
+            sans-serif;
+        line-height: 1.6rem;
+        padding-top: 30px;
+        
+    }
+    .landingimg {
+        width: 300px;
+        height: 300px;
+        background-color: aqua;
+        border-radius: 20% 2% 20px 2% ;
+        background-image: url(../images/bride\ and\ groom.jpg);
+        background-position: center;
+        background-size: cover;
+        border-image: repeat;
+    }
+
+   
+
+    .introbtn {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        font-family: 'Josefin Sans',
+            sans-serif;
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: 50px;
+
+    
+    }
+
+    .introbtn:hover {
+        background-color: #664c4c;
+        color: aliceblue;
+        transition: 0.2s;
+    }
+
+    /* ABOUT US SECTION MOBILE */
+
+    .aboutbox{
+        height: 500px ;
+        border-radius: 10px 0px ;
+    }
+    /* PRODUCT SECTION MOBILE */
+
+  
+
+    .productbody{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product{
+        margin-bottom:20%;
+        margin-top: 10%;
+       
+    }
+    .producttext{
+        height: 1700px;
+
+        
+    }
+
+    /* VIDEO CONTAINER MOBILE*/
+
+    .importvid>video{
+        width: 90%;
+        margin-left: 5.5%;
+        box-shadow: 0 3px 3px palevioletred black;
+        
+
+    }
+
+    /* FOOTER CONTAINER MOBILE*/
+    .icon{
+        display: flex;
+        padding-top: 22%;
+    }
+
+   
+   
+
+   
+} 
+
+
+
+
+
+
+
+
+
+@media only screen and(max-width: 400px) {
+    .introbtn{
+        width: 10px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+
+
+}
